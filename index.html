@@ -50,6 +50,7 @@ section{padding:16px 0 72px}
 h2{font-size:clamp(1.8rem,4vw,2.4rem);letter-spacing:-.02em}
 .sub{color:var(--muted);margin:10px 0 28px}
 .project{display:grid;grid-template-columns:.9fr 1.1fr;background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.project + .project{margin-top:22px}
 .shot{background:var(--tint);padding:28px;display:grid;place-items:center}
 .browser{width:100%;max-width:300px;background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:0 10px 30px rgba(36,83,212,.12)}
 .browser i{display:block;height:22px;background:#EEF2FA;border-bottom:1px solid var(--line)}
@@ -60,7 +61,7 @@ h2{font-size:clamp(1.8rem,4vw,2.4rem);letter-spacing:-.02em}
 .info p{margin:12px 0 0;color:var(--muted)}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 24px;padding:0;list-style:none}
 .tags li{font-size:.88rem;font-weight:500;padding:3px 12px;border-radius:999px;background:var(--tint);color:var(--accent)}
-.next{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.next{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:20px}
 .next article{padding:24px;border:1.5px dashed #B7C2DC;border-radius:14px}
 .next span{font-size:.88rem;font-weight:600;color:var(--accent)}
 .next h3{font-size:1.2rem;margin-top:6px}
@@ -124,7 +125,7 @@ footer{padding:22px 0;text-align:center;color:var(--muted);font-size:.92rem}
     <section id="about">
       <div class="about-row">
         <h2>About me</h2>
-        <p class="about">I'm an entry-level web developer and graphic designer aiming for a career in online selling. I build websites with HTML, CSS, and JavaScript and design visuals in Photoshop and Canva, because an online store has to work well and look good to bring in customers. I'm also TESDA Computer Systems Servicing NC II certified, so I'm used to solving technical problems carefully. I'm looking for an entry-level role where I can help a business sell online.</p>
+        <p class="about">I'm an entry-level Web Developer for e-commerce and Graphic Designer, aiming to build online stores and design the visuals that help them sell. I build websites with HTML, CSS, and JavaScript and design visuals in Photoshop and Canva, because an online store has to work well and look good to bring in customers. I'm also TESDA Computer Systems Servicing NC II certified, so I'm used to solving technical problems carefully. I'm looking for an entry-level role where I can help a business sell online.</p>
       </div>
     </section>
 
@@ -165,9 +166,20 @@ footer{padding:22px 0;text-align:center;color:var(--muted);font-size:.92rem}
         </div>
       </article>
 
+      <article class="project">
+        <div class="shot" aria-hidden="true">
+          <div class="browser"><i></i><div>Anyo Apparel<small>Style, made simple</small></div></div>
+        </div>
+        <div class="info">
+          <h3>Anyo Apparel</h3>
+          <p>A demo apparel e-commerce store, built from scratch. Browse 8 products and add them to a working cart with a live running total.</p>
+          <ul class="tags"><li>Website</li><li>E-commerce</li><li>Live</li></ul>
+          <a class="btn" href="https://michioooo0513-cmd.github.io/Online-Store/" target="_blank" rel="noopener">Visit the store</a>
+        </div>
+      </article>
+
       <div class="next">
         <article><span>Coming soon</span><h3>Poster or logo</h3><p>A poster or logo design for a real or sample brand.</p></article>
-        <article><span>Coming soon</span><h3>Online store project</h3><p>A small online store, built from scratch.</p></article>
       </div>
     </section>
   </main>
